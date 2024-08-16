@@ -3,7 +3,15 @@ import 'package:flutter/material.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+      options: FirebaseOptions(
+        apiKey: 'AIzaSyChwhBA0diM-_isRBovdAItqCLLmYbIf8s',
+        appId: '1:303825051963:android:2df778bbd12488ada5171e',
+        messagingSenderId: '303825051963',
+        projectId: 'finance-62d70',
+        storageBucket: 'finance-62d70.appspot.com',
+      )
+  );
   runApp(const MyApp());
 }
 
